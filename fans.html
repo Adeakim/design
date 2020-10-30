@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:blue;
+            color: white;
+        }
+        .hand1{
+            background-color: black;
+            width: 250px;
+            height:75px;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+            position: relative;
+            top:160px;
+            left: 170px;
+            margin: auto;
+            transform:rotate(335deg);
+            
+            
+        
+        }
+        .hand2{
+            background-color: black;
+            width: 250px;
+            height:75px;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+            position: relative;
+            top:100px;
+            right: 170px;
+            margin: auto;
+            transform: rotate(200deg);
+            
+            
+            
+        }
+    
+        .hand3{
+            background-color: black;
+            width: 250px;
+            height:75px;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+            position: relative;
+            top:270px;
+            right: -20px;
+            margin: auto;
+            transform:rotate(85deg);
+            
+             }
+            
+             
+        .engine{
+            background-color: black;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: relative;
+            right: -2px;
+            bottom: 0px;
+            margin: auto;
+           
+           
+             }
+            
+
+        
+        .handle1{
+            width: 40px;
+            height: 40px;
+            background-color: black;
+            position: relative;
+            right: 50%;
+            top:0px;
+            margin: auto;
+        
+        }
+        .handle2{
+            width: 40px;
+            height: 40px;
+            background-color: black;
+            position: relative;
+            right: 50%;
+            top:0px;
+            margin: auto;
+        
+        }
+        .handle3{
+            width: 40px;
+            height: 40px;
+            background-color: black;
+            position: relative;
+            right: 50%;
+            top:0px;
+            margin: auto;
+        
+        }
+        .whole{
+            position: relative;
+            right: inherit;
+            top: inherit;
+            margin-top: 50px;
+            transform:skew(30deg,-30deg);
+            animation-name: rotation;
+            animation-duration: 0;
+            animation-iteration-count: infinite;
+        }
+        @keyframes rotation{
+                 0%{
+                     transform: rotate(45deg);
+                     
+                     
+
+                 }
+                 50%{
+                     transform: rotate(90deg);
+                     
+                     
+                     
+                 }
+                 100%{
+                     transform: rotate(180deg);
+                     
+                 }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="whole">
+    <div class="hand1">1<div class="handle1"></div></div>
+    <div class="hand2">2<div class="handle2"></div></div>
+    <div class="hand3">3<div class="handle3"></div></div>
+    <div class="engine"></div>
+</div>
+</body>
+</html>
